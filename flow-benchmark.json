@@ -1,0 +1,36 @@
+{
+  "input": "synthetic normalized random PMFs",
+  "seed": 202511,
+  "repeats": 9,
+  "absolute_tolerance": 1e-12,
+  "relative_tolerance": 1e-10,
+  "python": "3.14.3",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "runs": [
+    {
+      "bins_each": 1024,
+      "output_bins": 2047,
+      "direct_median_ms": 0.0979,
+      "fft_median_ms": 0.0974,
+      "max_absolute_error": 4.336808689942018e-19,
+      "max_probability_mass_error": 2.220446049250313e-16
+    },
+    {
+      "bins_each": 4096,
+      "output_bins": 8191,
+      "direct_median_ms": 2.2342,
+      "fft_median_ms": 0.2948,
+      "max_absolute_error": 1.6263032587282567e-19,
+      "max_probability_mass_error": 1.1102230246251565e-16
+    },
+    {
+      "bins_each": 8192,
+      "output_bins": 16383,
+      "direct_median_ms": 14.7631,
+      "fft_median_ms": 0.7352,
+      "max_absolute_error": 1.0842021724855044e-19,
+      "max_probability_mass_error": 0.0
+    }
+  ]
+}

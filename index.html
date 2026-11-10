@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>江鹏宇 · AI 产品作品集</title>
+<meta name="description" content="江鹏宇的 AI 产品作品集，涵盖企业知识库、智能家居 Agent 和流程性能分析。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800;900&amp;family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f4f1eb;--ink:#211b2e;--muted:#625973;--violet:#6428e0;--violet-dark:#4616ad;--line:#e0d9e6;--lime:#c6f45b;--mono:"JetBrains Mono",monospace;--serif:Fraunces,Georgia,serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:radial-gradient(ellipse at 4% 0%,#eee5ff,transparent 43%),radial-gradient(ellipse at 95% 6%,#eef2d8,transparent 38%),var(--paper);font:15px/1.75 "Noto Sans SC","Microsoft YaHei",sans-serif}a{color:inherit;text-underline-offset:4px}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #9b72ff;outline-offset:4px}main,footer{width:min(1140px,calc(100% - 48px));margin:auto}
+header{position:sticky;top:0;z-index:10;background:#f7f3efed;backdrop-filter:blur(16px);border-bottom:1px solid #e8e0eb}.nav-shell{display:flex;justify-content:space-between;align-items:center;width:min(1140px,calc(100% - 48px));margin:auto;min-height:69px;gap:16px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:800;line-height:1.2}.brand em{display:grid;place-items:center;width:35px;height:35px;background:var(--violet);color:white;border-radius:10px;font:700 15px var(--serif);font-style:normal}.brand small{display:block;margin-top:4px;font:9px var(--mono);letter-spacing:.08em;color:var(--muted)}nav{display:flex;gap:8px}nav a{padding:7px 14px;border-radius:100px;text-decoration:none;color:var(--muted);font-size:13px}nav a:hover,nav a[aria-current]{background:#eae0ff;color:var(--violet-dark)}.progress{height:2px;background:var(--violet);position:absolute;bottom:-1px;left:0;width:100%;transform:scaleX(0);transform-origin:left}
+.hero{min-height:570px;display:grid;grid-template-columns:1.04fr 1fr;gap:55px;padding:78px 0 62px;align-items:center}.eyebrow{font:600 11px/1.6 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--violet-dark);display:flex;align-items:center;gap:9px}.eyebrow:before{content:"";width:21px;height:2px;background:currentColor}.hero h1{font-size:clamp(45px,6.5vw,83px);letter-spacing:-.073em;line-height:1.04;margin:18px 0 0;font-weight:900}.hero .display{font:600 clamp(32px,4.3vw,61px)/1.08 var(--serif);letter-spacing:-.06em;color:var(--violet);margin:2px 0 20px}.hero .intro{color:var(--muted);max-width:440px}.chips{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0}.chips span,.tag{border:1px solid #e0d3f4;background:#f8f2ff;border-radius:99px;color:var(--violet-dark);font-size:12px;padding:3px 10px;white-space:nowrap}.jump{display:inline-flex;gap:8px;background:var(--violet);color:white;text-decoration:none;padding:9px 16px;border-radius:9px;font-weight:700}.jump:hover{background:var(--violet-dark)}
+.feature{position:relative;overflow:hidden;background:radial-gradient(circle at 90% 10%,#6541ae 0,transparent 49%),#281740;color:#fff;border-radius:22px;box-shadow:0 22px 45px #43287525;padding:27px;min-width:0}.feature .eyebrow{color:#e1caff}.feature h2{font-size:clamp(24px,3vw,38px);line-height:1.23;margin:15px 0 10px}.feature p{margin:0;color:#e6dff0;font-size:14px;min-height:48px}.feature .controls{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #ffffff35;margin-top:12px;padding-top:13px}.counter{color:#e6d8fc;font:12px var(--mono)}.arrows{display:flex;gap:7px}.arrows button{height:40px;width:40px;border:1px solid #ffffff55;border-radius:9px;background:#ffffff0f;color:white;font-size:20px}.arrows button:hover{color:#231534;background:var(--lime)}.feature a{color:#fff}.feature a:hover{color:var(--lime)}
+section{padding:45px 0;border-top:1px solid var(--line);scroll-margin-top:74px}section h2{font-size:clamp(29px,4vw,49px);letter-spacing:-.055em;line-height:1.17;margin:9px 0 22px;font-weight:850}h3{line-height:1.35;margin:0 0 4px;font-weight:800}.muted,.rule{color:var(--muted);font-size:13px}details{background:#fffdf9;border:1px solid var(--line);border-radius:15px;margin:12px 0;box-shadow:0 4px 15px #37214708;overflow:hidden;scroll-margin-top:85px}details[open]{border-color:#d6c4f4}summary{cursor:pointer;display:grid;grid-template-columns:40px minmax(0,1fr) auto 36px;align-items:center;gap:15px;padding:18px;list-style:none}summary::-webkit-details-marker{display:none}summary:after{content:"+";display:grid;place-items:center;color:var(--violet-dark);background:#efe6ff;border-radius:9px;width:36px;height:36px;font-size:21px}details[open] summary:after{content:"−";background:var(--violet);color:white}summary:hover{background:#faf6ff}.number{color:var(--violet-dark);font:600 13px var(--mono)}.content{padding:7px 22px 24px 73px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.box{background:#f8f4fc;border:1px solid #ebe1f2;border-radius:11px;padding:12px 13px}.box strong{color:var(--violet-dark);font-size:13px}.box p{margin:4px 0;font-size:14px}.box .big{color:var(--violet-dark);font:700 32px var(--serif)}.labels{font:12px/1.6 var(--mono);color:var(--muted);margin:16px 0 8px}.manifesto{background:#ebe2fb;border:1px solid #e4d5fa;border-radius:16px;padding:24px 28px;max-width:830px}footer{border-top:1px solid var(--line);padding:18px 0 38px;color:var(--muted);font:12px var(--mono)}
+@media(max-width:760px){main,footer,.nav-shell{width:calc(100% - 32px)}.hero{min-height:0;grid-template-columns:1fr;gap:24px;padding:39px 0 38px}.hero .display{margin-bottom:12px}.feature{padding:20px}.grid{grid-template-columns:1fr}.content{padding:5px 13px 16px}.nav-shell{min-height:59px;gap:4px}nav{gap:0}nav a{padding:6px;font-size:12px}.brand em{width:29px;height:29px}.brand{gap:6px;font-size:13px}.brand small{display:none}summary{grid-template-columns:23px minmax(0,1fr) auto 25px;gap:6px;padding:12px}summary:after{width:25px;height:25px}summary h3{font-size:14px}.muted{font-size:11px}.tag{font-size:10px;padding:2px 5px}section{padding:34px 0}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.feature-art{position:relative;height:140px;margin:10px 0 0;border:1px solid #ffffff24;border-radius:14px;overflow:hidden;background:radial-gradient(ellipse at 50% 110%,#8b58e96b,transparent 70%),linear-gradient(120deg,#201336,#40276b);isolation:isolate}
+.feature-art svg{width:100%;height:100%;display:block}.feature-art .gridline{stroke:#b895ff;stroke-opacity:.14}.feature-art .flow{stroke:#b394ff;stroke-width:1.4;stroke-dasharray:5 7;animation:signal 1.9s linear infinite;fill:none}.feature-art .node{fill:#31204f;stroke:#b694ff;stroke-width:1}.feature-art .core{fill:#c6f45b;stroke:#dfffa2;stroke-width:1.5}.feature-art text{font:600 10px "Noto Sans SC","Microsoft YaHei",sans-serif;fill:#f5eaff;text-anchor:middle}.feature-art .dark{fill:#2c2040;font-weight:850}.feature-art .halo{fill:none;stroke:#c6f45b;transform-origin:210px 68px;animation:pulse 3s ease-out infinite}.feature-art .spark{fill:#e9dcff;animation:twinkle 3s ease-in-out infinite}.feature-art .spark:nth-child(2n){animation-delay:-1.4s}.feature-art .trace{fill:none;stroke:#c6f45b;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:320;animation:draw-line 4s ease-in-out infinite}.feature-art [data-scene]{display:none}.feature-art[data-active="0"] [data-scene="0"],.feature-art[data-active="1"] [data-scene="1"],.feature-art[data-active="2"] [data-scene="2"],.feature-art[data-active="3"] [data-scene="3"]{display:block;animation:scene-in .35s ease-out both}
+@keyframes signal{to{stroke-dashoffset:-24}}@keyframes pulse{0%{transform:scale(.8);opacity:.8}85%,100%{transform:scale(1.38);opacity:0}}@keyframes twinkle{0%,100%{opacity:.25}50%{opacity:1}}@keyframes draw-line{0%{stroke-dashoffset:320}42%,84%{stroke-dashoffset:0}100%{stroke-dashoffset:-320}}@keyframes scene-in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}@media(max-width:760px){.feature-art{height:120px}}@media(prefers-reduced-motion:reduce){.feature-art *{animation:none!important}.feature-art .trace{stroke-dasharray:none}.feature-art .halo{opacity:.38}}
+
+/* Editorial type scale */
+:root{--cn-display:"Noto Serif SC","Songti SC",SimSun,serif;--cn-body:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif}
+body{font-family:var(--cn-body);font-weight:400;line-height:1.78;text-rendering:optimizeLegibility}
+.hero h1{font-family:var(--cn-display);font-weight:900;font-size:clamp(51px,7vw,90px);letter-spacing:.02em;line-height:1.13;margin:13px 0 7px}
+.hero .display{font-weight:600;font-size:clamp(30px,4.3vw,59px);line-height:1.02;letter-spacing:-.057em;margin:0 0 19px}
+.hero .intro{font-size:15px;line-height:1.88;max-width:455px}
+section h2{font-family:var(--cn-display);font-weight:900;font-size:clamp(28px,3.65vw,46px);letter-spacing:.018em;line-height:1.28}
+.feature h2{font-family:var(--cn-display);font-weight:700;letter-spacing:.014em;line-height:1.28}
+.feature p{line-height:1.73}
+summary h3{font-size:17px;font-weight:800;line-height:1.45;letter-spacing:.008em}
+.box strong{font-weight:800;letter-spacing:.025em}.box p{line-height:1.78}
+.eyebrow,.counter,.number,.brand small{font-variant-numeric:tabular-nums}
+@media(max-width:760px){.hero h1{font-size:clamp(46px,12vw,66px)}.hero .intro{font-size:14px}.feature h2{font-size:24px}summary h3{font-size:14px}}
+.case-intro{margin:0 0 17px;color:var(--muted);max-width:76ch}.case-part{padding:14px 0 0;margin:15px 0 0;border-top:1px solid var(--line);scroll-margin-top:90px}.case-heading{display:flex;align-items:center;gap:10px;margin-bottom:10px}.case-heading .number{background:#eee4ff;border-radius:6px;padding:4px 6px}.case-heading h4{font-size:16px;margin:0}.case-part>p{margin:0;font-size:14px}.case-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;padding:0;margin:0 0 10px;list-style:none;counter-reset:case-step}.case-flow li{counter-increment:case-step;background:#f1eafa;border:1px solid #e7d9f5;border-radius:9px;padding:8px 9px;color:var(--violet-dark);font-size:12px;font-weight:700}.case-flow li:before{content:counter(case-step,decimal-leading-zero) " ";font:600 10px var(--mono);opacity:.7}.case-example{padding:12px 14px;border-radius:10px;background:#f8f4fc;border-left:3px solid var(--violet)}.case-example p{margin:5px 0 0;font-size:14px}@media(max-width:760px){.case-flow{grid-template-columns:1fr 1fr}.case-intro{font-size:14px}}/* Reference-matched type scale */
+body{font-size:1rem}
+.hero h1{font-size:clamp(2.5rem,6.2vw,5rem);line-height:1.1}
+.hero .intro{font-size:clamp(1rem,1.4vw,1.12rem);line-height:1.85}
+section h2{font-size:clamp(1.9rem,3.4vw,2.8rem)}
+summary h3{font-size:1.15rem;line-height:1.38}
+summary .muted{font-size:.88rem}
+.case-heading h4{font-size:1.05rem}
+.case-intro,.box p,.case-part>p,.case-example p{font-size:.98rem;line-height:1.85}
+.box strong{font-size:.92rem}
+.case-flow li{font-size:.8rem}
+@media(max-width:760px){.hero h1{font-size:clamp(2.2rem,11vw,3rem)}.hero .intro{font-size:1rem}summary h3{font-size:1rem}summary .muted{font-size:.8rem}.case-intro,.box p,.case-part>p,.case-example p{font-size:.93rem;line-height:1.75}}
+.hero-belief{margin:10px 0 14px;padding-left:12px;border-left:2px solid var(--violet);font-size:.93rem;line-height:1.7;font-weight:650;color:var(--violet-dark)}.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:9px}.resume-button{display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:9px;border:1px solid #d8c4fa;background:#faf6ff;color:var(--violet-dark);text-decoration:none;font-size:.9rem;font-weight:700;white-space:nowrap}.resume-button:hover{background:#ece0ff}.nav-shell>.resume-button{font-size:.8rem;padding:6px 10px}@media(max-width:760px){.nav-shell>.resume-button{display:none}}.hero{position:relative;isolation:isolate}.particle-field{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;mask-image:linear-gradient(180deg,transparent 0%,black 10%,black 83%,transparent 100%)}.hero-actions{gap:10px;margin-top:14px}.hero-actions .jump,.hero-actions .resume-button{margin:0;min-height:50px;padding:10px 20px;display:inline-flex;align-items:center;justify-content:center;font-size:1rem;border-radius:8px}.hero-actions .jump{border:1px solid var(--violet);box-shadow:0 8px 20px #6428e034}.hero-actions .resume-button{background:#fff;border:1px solid var(--ink);color:var(--ink)}.hero-actions .resume-button:hover{background:#f3ebff;color:var(--violet-dark)}@media(max-width:390px){.hero-actions .jump,.hero-actions .resume-button{min-height:46px;padding-inline:12px;font-size:.9rem}}.page-toc{display:none}.contact-note{color:var(--muted)}
+@media(min-width:1250px){main,footer{width:min(1140px,calc(100% - 244px));margin-left:max(24px,calc((100% - 1360px)/2));margin-right:auto}.page-toc{display:block;position:fixed;z-index:8;right:max(18px,calc((100vw - 1530px)/2));top:50%;transform:translateY(-50%);width:157px;padding:11px;border:1px solid #e2d8eb;border-radius:15px;background:#f8f5f9d9;backdrop-filter:blur(14px);box-shadow:0 12px 36px #34225816}.page-toc p{margin:7px 7px 10px;font:600 10px var(--mono);letter-spacing:.15em;color:var(--muted)}.page-toc a{display:flex;align-items:center;gap:10px;padding:7px 8px;border-radius:8px;color:var(--muted);text-decoration:none;font-size:14px}.page-toc a::before{content:"";width:8px;height:8px;border:1.5px solid #9c8aab;border-radius:50%;background:white}.page-toc a:hover,.page-toc a[aria-current]{background:#eee5ff;color:var(--violet-dark)}.page-toc a[aria-current]::before{border-color:var(--violet);background:var(--violet);box-shadow:0 0 0 4px #d9c6ff}}
+@media(max-width:390px){.nav-shell{width:calc(100% - 20px)}nav a{padding-inline:5px;font-size:11px}}.repo-link{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;max-width:100%}.repo-link span{font:12px/1.7 var(--mono);color:var(--violet-dark);overflow-wrap:anywhere}
+/* Type families and scale matched to the reference portfolio. */
+:root{--serif:Fraunces,serif;--mono:"JetBrains Mono",monospace;--cn-display:var(--serif);--cn-body:"Noto Sans SC",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+body{font:1rem/1.6 var(--cn-body);-webkit-font-smoothing:antialiased}
+.hero h1,.hero .display{font-family:var(--serif);font-weight:900;font-size:clamp(2.5rem,6.2vw,5rem);line-height:1.03;letter-spacing:-.025em}
+.hero h1{margin-bottom:10px}.hero .display{margin-bottom:18px}.hero .intro{font-size:clamp(1rem,1.4vw,1.12rem);line-height:1.85;max-width:60ch}
+section h2{font-family:var(--serif);font-size:clamp(2.1rem,5vw,3.6rem);font-weight:900;line-height:1;letter-spacing:-.025em}
+.feature h2{font-family:var(--serif);font-weight:900;font-size:clamp(1.9rem,3.4vw,2.8rem);line-height:1.04;letter-spacing:-.025em}
+summary h3{font-family:var(--serif);font-size:clamp(1.2rem,2.3vw,1.7rem);font-weight:700;line-height:1.15;letter-spacing:-.02em}
+summary .number{font-family:var(--serif);font-weight:900;font-size:clamp(1.5rem,3vw,2.2rem);line-height:1}
+summary .muted{font-size:.88rem;line-height:1.55}
+.case-intro,.box p,.case-part>p,.case-example p{font-family:var(--cn-body);font-size:.95rem;line-height:1.8}
+.page-toc p{font-size:.58rem;letter-spacing:.22em}.page-toc a{font-size:.82rem}
+.brand{font-family:var(--serif);font-size:1.04rem;font-weight:700;letter-spacing:-.01em}.brand small{font-size:.62rem;letter-spacing:.16em}
+@media(max-width:760px){.hero h1,.hero .display{font-size:clamp(2.2rem,11vw,3rem)}.feature h2{font-size:1.9rem}summary .number{font-size:1.5rem}}
+.section-pair{display:grid;grid-template-columns:1.2fr 1fr;gap:25px;align-items:start}.section-pair>p{margin:8px 0 20px;color:var(--muted);max-width:42ch}.project-showcase{border-radius:20px;background:#fffdf9;border:1px solid var(--line);box-shadow:0 16px 38px #34225818;overflow:hidden;margin-bottom:18px}.show-panel{display:grid;grid-template-columns:1fr 1fr}.show-panel[hidden],.note-card[hidden]{display:none}.show-visual{padding:27px;background:#eae5dc;display:flex;flex-direction:column;gap:14px;justify-content:center}.preview-caption{display:grid;gap:4px}.preview-caption span{font:11px var(--mono);color:var(--muted)}.preview-ui{background:#211936;border:1px solid #4a3868;border-radius:13px;overflow:hidden;color:#f9f3ff}.preview-top{display:flex;align-items:center;gap:5px;background:#312548;padding:10px;font:10px var(--mono);letter-spacing:.08em;color:#dbcaf8}.preview-top i{width:6px;height:6px;border-radius:50%;background:#a77cf1}.preview-top span{margin-left:5px}.preview-ui dl{margin:0;padding:14px 16px;display:grid;gap:5px}.preview-ui dt{color:var(--lime);font-size:11px}.preview-ui dd{margin:0 0 7px;padding-bottom:6px;border-bottom:1px solid #ffffff20;font-size:13px}.show-copy{padding:30px;min-width:0}.show-copy h3,.note-card h3{font:900 clamp(1.65rem,3.1vw,2.6rem)/1.15 var(--serif);margin:11px 0 18px}.show-copy ul{padding-left:19px;color:var(--muted);line-height:1.8}.show-copy li{margin:8px 0}.show-copy li::marker{color:var(--violet)}.show-controls,.note-controls{display:flex;align-items:center;gap:9px;padding:11px 22px}.show-controls{border-top:1px solid var(--line)}.show-count,.note-count{font:12px var(--mono);color:var(--muted);margin-left:5px}.show-dot{width:26px;height:26px;border:0;border-radius:50%;background:transparent;display:grid;place-items:center;padding:0}.show-dot::before{content:"";width:9px;height:9px;border-radius:50%;background:#c5b8d0}.show-dot[aria-pressed=true]::before{background:var(--violet);box-shadow:0 0 0 4px #ede1ff}.note-controls{justify-content:flex-end;padding:0 0 12px}.note-stack{isolation:isolate;position:relative;margin:0 12px 18px 0}.note-stack::before,.note-stack::after{content:"";position:absolute;inset:8px -7px -8px 8px;z-index:-1;background:#faf7ff;border:1px solid var(--line);border-radius:17px;transform:rotate(.55deg)}.note-stack::after{inset:13px -10px -13px 13px;z-index:-2;transform:rotate(1deg)}.note-card{border:1px solid var(--line);background:#fff;border-radius:17px;box-shadow:0 15px 40px #34225818;min-height:280px;padding:30px;animation:scene-in .3s ease-out both}.note-card p{max-width:66ch;color:var(--muted);line-height:1.8}.note-card small{display:block;margin-top:22px;font:12px var(--mono);color:var(--muted)}#contact{padding:34px;border-radius:20px;background:#231b30;color:#fff;border:0;margin:24px 0}.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-layout .eyebrow{color:var(--lime)}.contact-layout h2{margin-top:16px}.contact-layout p,.contact-card dt{color:#d4ccdf}.contact-layout .jump{background:var(--lime);color:#211a2c;border-color:transparent;box-shadow:none}.contact-layout .resume-button{background:transparent;color:white;border-color:#ffffff53}.contact-card{padding:18px;border-radius:13px;background:#ffffff08;border:1px solid #ffffff30;min-width:0}.contact-card dl{margin:12px 0 0}.contact-card dt{border-top:1px solid #ffffff20;padding-top:7px;font-size:12px}.contact-card dd{margin:3px 0 10px;overflow-wrap:anywhere}.contact-card dd a{color:white}@media(max-width:760px){.section-pair,.show-panel,.contact-layout{grid-template-columns:1fr;gap:0}.show-visual,.show-copy,.note-card{padding:18px}#contact{padding:19px}.contact-card{margin-top:18px}.note-card{min-height:230px}}@media(prefers-reduced-motion:reduce){.note-card{animation:none}}
+.project-showcase{display:grid;gap:18px;overflow:visible;border:0;box-shadow:none;background:transparent}
+.show-panel{border:1px solid var(--line);border-radius:19px;overflow:hidden;background:#fffdf9;box-shadow:0 12px 30px #34225812}
+.show-visual .show-controls{padding:0;border:0}
+.preview-ui dl{min-height:114px;align-content:center}.preview-ui dd{border:0;margin:0;font-size:16px}
+.note-stack{display:grid;perspective:1050px}.note-card{grid-area:1/1;min-height:310px;animation:none;transform-origin:left center}.note-card.is-active{z-index:3;cursor:pointer}.note-card.is-next,.note-card.is-back{pointer-events:none}.note-card.is-next{z-index:2;transform:translate(8px,7px) rotate(.65deg);color:transparent}.note-card.is-back{z-index:1;transform:translate(12px,12px) rotate(1.2deg);color:transparent}.note-card.is-next>*,.note-card.is-back>*{visibility:hidden}.note-card.is-leaving{z-index:4;pointer-events:none;animation:note-leave .5s ease-in both}@keyframes note-leave{to{opacity:0;transform:translate(-22px,-5px) rotateY(-24deg) rotateZ(-4deg)}}@media(max-width:760px){.note-card{min-height:245px}}.project-brief{margin:3px 0 21px;padding:17px 19px;border:1px solid var(--line);border-radius:12px;background:#fff}.brief-head{display:flex;justify-content:space-between;gap:9px;align-items:baseline}.brief-head h4{margin:0;font:700 clamp(1.12rem,2.1vw,1.55rem)/1.25 var(--serif)}.brief-head span{font:.72rem var(--mono);color:var(--muted);white-space:nowrap}.brief-pain{margin:12px 0 9px;color:var(--muted);line-height:1.7}.brief-pain b{color:var(--violet-dark);margin-right:.6em}.project-brief dl{margin:0}.brief-row{display:grid;grid-template-columns:85px minmax(0,1fr);gap:10px;padding:9px 0;border-top:1px dashed var(--line)}.brief-row dt{font:700 .78rem/1.9 var(--mono);color:var(--violet-dark);display:flex;align-items:baseline;gap:8px}.brief-row dt::before{content:"";width:8px;height:8px;background:var(--lime);border-radius:50%;display:inline-block}.brief-row dd{margin:0;color:var(--muted);font-size:.94rem;line-height:1.75}@media(max-width:760px){.project-brief{padding:13px}.brief-row{grid-template-columns:53px minmax(0,1fr);gap:7px}.brief-row dd{font-size:.88rem}}.academic-line{font:italic 500 clamp(1rem,1.55vw,1.28rem)/1.55 var(--serif);color:var(--muted);margin:0 0 13px}.academic-line span{font-size:.88em}.case-mock{margin:12px!important;padding:16px!important;border:1px solid #ffffff28;border-radius:10px;background:linear-gradient(145deg,#392857,#261c3b);min-height:175px!important}.case-mock .mock-label{font:11px var(--mono);color:#dbbdff;margin-bottom:5px}.case-mock .mock-detail{margin-top:8px;color:#e0d3ef;font-size:12px}.case-mock .mock-badge{justify-self:start;margin-top:6px;background:#c6f45b;color:#262436;padding:2px 8px;border-radius:5px;font-size:11px}.case-mock dd{overflow-wrap:anywhere}.show-panel:nth-child(1) .show-visual{background:#eae3f4}.show-panel:nth-child(2) .show-visual{background:#e1efeb}.show-panel:nth-child(3) .show-visual{background:#e4eef8}.show-panel:nth-child(4) .show-visual{background:#f2e8d5}.preview-ui[data-theme="1"]{background:#143932;border-color:#32665b}.preview-ui[data-theme="1"] .preview-top{background:#215248}.preview-ui[data-theme="2"],.preview-ui[data-theme="3"]{background:#fff;color:#172b46;border-color:#bdcfe3}.preview-ui[data-theme="2"] .preview-top{background:#204a7a}.preview-ui[data-theme="3"]{border-color:#ddc6a1;color:#473424}.preview-ui[data-theme="3"] .preview-top{background:#5d3d25}.preview-ui[data-theme="2"] dt,.preview-ui[data-theme="3"] dt{color:#43566e}.visual-stage{font:600 11px var(--mono);opacity:.8}.visual-diagram{margin-top:6px}.visual-diagram svg{width:100%;height:68px}.case-layout,.paper-layout,.device-layout{display:grid;gap:7px}.case-layout{grid-template-columns:83px 1fr}.case-layout aside,.paper-layout i,.device-layout i{font:inherit;font-size:11px;border-radius:7px;padding:8px}.case-layout aside{background:#ffffff15}.ui-line,.ui-row i{display:block;background:#ffffff26;border-radius:5px;height:14px}.ui-row{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:7px}.ui-row i{height:38px}.device-layout{grid-template-columns:repeat(3,1fr)}.device-layout i{background:#4bb79d30;text-align:center;color:#c9ffe8}.paper-layout{grid-template-columns:1.15fr 1fr}.paper-layout i{background:#faf1df;border:1px solid #ead3ad}.preview-ui dl{min-height:180px}.preview-ui dd{font-size:clamp(13px,2vw,16px)}.preview-ui dl{display:block;padding:14px;min-height:0}.live-demo{display:grid;gap:9px}.live-demo h4{margin:0;font:700 clamp(18px,2vw,26px)/1.2 var(--cn-body)}.live-tile{display:grid;gap:3px;padding:9px 12px;border:1px solid #8885;border-radius:10px;background:#8881}.live-tile small{font-size:11px;opacity:.8}.live-tile strong{font-size:13px}.demo-action{justify-self:start;background:#c6f45b;color:#202238;border:0;border-radius:8px;padding:7px 13px;font:700 13px var(--cn-body)}.demo-action:hover{filter:brightness(.91)}.demo-action:disabled{opacity:.7;cursor:default}.demo-status{margin:0;font-size:11px;min-height:19px}.preview-ui[data-theme="2"] .demo-action{background:#245aba;color:#fff}.preview-ui[data-theme="3"] .demo-action{background:#7e4927;color:#fff}
+.project-facts{margin:14px 0;padding:12px 14px;background:#f3edf9;border:1px solid #e6d9f0;border-radius:12px}.fact-lead{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 10px}.fact-lead strong{font:900 clamp(31px,4vw,54px)/1 var(--serif);color:var(--violet-dark)}.project-facts small{color:var(--muted);font-size:11px}.fact-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px;border-top:1px solid #ded2e7;margin-top:8px;padding:8px 0}.fact-pair div{display:grid;gap:2px}.fact-pair strong{font:800 1.35rem/1.1 var(--serif)}.fact-role{border-top:1px solid #ded2e7;padding-top:7px;display:flex;flex-wrap:wrap;gap:4px 10px;font-size:11px;color:var(--muted)}.fact-role span:first-child{font:600 10px var(--mono);color:var(--violet-dark)}
+</style>
+<link rel="stylesheet" href="./portfolio-projects.css">
+<body>
+<div class="jp-intro" id="jp-intro" aria-hidden="true" hidden>
+  <div class="jp-intro-panel">
+    <span class="jp-intro-mark">JP</span>
+    <span class="jp-intro-name">江鹏宇</span>
+    <span class="jp-intro-label" lang="en">AI PRODUCT PORTFOLIO</span>
+    <span class="jp-intro-track"></span>
+  </div>
+</div>
+<script>
+(() => {
+  const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const intro = document.getElementById("jp-intro");
+  const introKey = "jp-portfolio-intro-seen";
+  let observer;
+  let landing;
+  let introTimer;
+  let heroRevealTimer;
+
+  function shouldPlayIntro() {
+    if (!intro || motion.matches || window.location.hash) return false;
+    try {
+      if (window.sessionStorage.getItem(introKey)) return false;
+      window.sessionStorage.setItem(introKey, "1");
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
+  function dismissIntro(revealHero = false) {
+    if (!intro || intro.hidden) return;
+    window.clearTimeout(introTimer);
+    window.clearTimeout(heroRevealTimer);
+    intro.hidden = true;
+    window.removeEventListener("keydown", skipIntro, true);
+    window.removeEventListener("pointerdown", skipIntro, true);
+    window.removeEventListener("wheel", skipIntro, true);
+    if (revealHero && !motion.matches && !window.location.hash) {
+      document.querySelector(".hero")?.classList.add("jp-hero-reveal");
+    }
+  }
+
+  function skipIntro() {
+    dismissIntro();
+  }
+
+  if (shouldPlayIntro()) {
+    intro.hidden = false;
+    intro.addEventListener("animationend", event => {
+      if (event.target === intro && event.animationName === "jp-intro-exit") dismissIntro(true);
+    });
+    heroRevealTimer = window.setTimeout(() => {
+      if (!intro.hidden && !motion.matches && !window.location.hash) {
+        document.querySelector(".hero")?.classList.add("jp-hero-reveal");
+      }
+    }, 480);
+    introTimer = window.setTimeout(() => dismissIntro(true), 780);
+    window.addEventListener("keydown", skipIntro, true);
+    window.addEventListener("pointerdown", skipIntro, true);
+    window.addEventListener("wheel", skipIntro, { capture: true, passive: true });
+  }
+
+  function stopLanding() {
+    observer?.disconnect();
+    observer = undefined;
+    landing?.cancel();
+    landing = undefined;
+  }
+
+  function highlightDestination() {
+    dismissIntro();
+    stopLanding();
+    if (motion.matches || !window.location.hash || window.location.hash === "#top") return;
+    let target;
+    try {
+      target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+    } catch {
+      return;
+    }
+    if (!target) return;
+    const focus = target.matches("h2,h3,h4,summary")
+      ? target
+      : target.querySelector("h2,h3,h4,summary");
+    if (!focus || typeof focus.animate !== "function") return;
+
+    function animateFocus() {
+      landing = focus.animate(
+        [{ opacity: .73, translate: "0 5px" }, { opacity: 1, translate: "0 0" }],
+        { duration: 250, easing: "cubic-bezier(.22,.75,.28,1)" }
+      );
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      animateFocus();
+      return;
+    }
+    observer = new IntersectionObserver(entries => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      observer?.disconnect();
+      observer = undefined;
+      if (!motion.matches) animateFocus();
+    }, { rootMargin: "0px 0px -12% 0px" });
+    observer.observe(focus);
+  }
+
+  window.addEventListener("hashchange", highlightDestination);
+  if (window.location.hash) {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", highlightDestination, { once: true });
+    } else {
+      highlightDestination();
+    }
+  }
+
+  motion.addEventListener?.("change", event => {
+    if (event.matches) {
+      dismissIntro();
+      stopLanding();
+      document.querySelector(".hero")?.classList.remove("jp-hero-reveal");
+    }
+  });
+})();
+</script>
+<header><div class="nav-shell"><a class="brand" href="#top"><em>JP</em><span>江鹏宇<small>AI PRODUCT</small></span></a><nav aria-label="页面导航"><a href="#experience">01 经历</a><a href="#project">02 项目</a><a href="#approach">03 思考</a><a href="#contact">04 联系</a></nav><a class="resume-button" href="./resume.pdf?v=pm-metrics" target="_blank" rel="noopener">查看 / 下载简历</a></div><div class="progress" aria-hidden="true"></div></header>
+<aside class="page-toc" aria-label="本页目录"><p>ON THIS PAGE</p><a href="#experience">工作经历</a><a href="#project">项目经历</a><a href="#approach">思考记录</a><a href="#contact">联系我</a></aside><main id="top"><div class="hero"><canvas class="particle-field" aria-hidden="true"></canvas><div><div class="eyebrow">AI 产品经理 · 个人作品集</div><h1>江鹏宇</h1><p class="display" lang="en">AI Product<br>Portfolio.</p><p class="academic-line">阿德莱德大学计算机科学与技术硕士<br><span>2026 QS 世界并列第 82 位 · 校友中有 5 位诺贝尔奖得主</span></p><p class="intro">在朗姿，我参与集团知识库和医美案例检索，从咨询师用什么信息开始，梳理病历、回访和 SAP 的数据对接。在涂鸦智能实习时，我参与过设备指令的追问、执行和故障问答设计。</p><p class="hero-belief">我关注一个实际问题：当 AI 给出一个建议或回执，业务人员怎么核对，并决定接下来该做什么。</p><div class="chips"><span>企业知识库</span><span>智能家居 Agent</span><span>流程性能分析</span></div><div class="hero-actions"><a class="jump" href="#experience">查看工作经历 →</a><a class="resume-button" href="./resume.pdf?v=pm-metrics" target="_blank" rel="noopener">查看 / 下载简历</a></div></div>
+<div class="feature" role="region" aria-roledescription="轮播" aria-label="代表项目"><div id="slide" aria-live="polite"><div class="eyebrow" id="f-label">代表项目 / 朗姿</div><h2 id="f-title">医美案例检索与推荐</h2><p id="f-desc">咨询师用顾客的自然语言描述查找相似案例，核对匹配理由后选用已审核的对客材料。</p><div class="feature-art" data-active="0" aria-hidden="true"><svg viewBox="0 0 420 136" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="art-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path class="gridline" d="M20 0H0V20" fill="none"/></pattern></defs><rect width="420" height="136" fill="url(#art-grid)"/><g><circle class="spark" cx="34" cy="26" r="2"/><circle class="spark" cx="362" cy="25" r="2"/><circle class="spark" cx="112" cy="108" r="1.6"/><circle class="spark" cx="390" cy="105" r="1.7"/></g><g data-scene="0"><path class="flow" d="M83 68H170 M250 68H337"/><rect class="node" x="44" y="55" width="68" height="26" rx="8"/><text x="78" y="72">顾客描述</text><circle class="halo" cx="210" cy="68" r="38"/><rect class="core" x="170" y="50" width="80" height="36" rx="11"/><text class="dark" x="210" y="72">案例检索</text><rect class="node" x="308" y="55" width="68" height="26" rx="8"/><text x="342" y="72">人工核对</text></g><g data-scene="1"><path class="flow" d="M83 68H170 M250 68H337"/><rect class="node" x="44" y="55" width="68" height="26" rx="8"/><text x="78" y="72">自然语言</text><circle class="halo" cx="210" cy="68" r="38"/><rect class="core" x="170" y="50" width="80" height="36" rx="11"/><text class="dark" x="210" y="72">家居 Agent</text><rect class="node" x="308" y="55" width="68" height="26" rx="8"/><text x="342" y="72">设备执行</text></g><g data-scene="2"><path d="M65 106H355M65 106V23" stroke="#b99de6" fill="none"/><path class="trace" d="M66 104C95 104 111 98 137 73S180 27 202 38S230 81 260 91S300 102 352 104"/><text x="322" y="123">流程总耗时</text><text x="103" y="27">概率分布</text></g><g data-scene="3"><path class="flow" d="M83 68H170 M250 68H337"/><rect class="node" x="44" y="55" width="68" height="26" rx="8"/><text x="78" y="72">公开披露</text><circle class="halo" cx="210" cy="68" r="38"/><rect class="core" x="170" y="50" width="80" height="36" rx="11"/><text class="dark" x="210" y="72">证据检索</text><rect class="node" x="308" y="55" width="68" height="26" rx="8"/><text x="342" y="72">研报初稿</text></g></svg></div><div class="feature-results" id="f-results" aria-label="项目成果"><div class="result-scope"><span>交付进度 · 试点</span></div><p class="result-value result-text">推荐结果可核对</p><p class="result-caption">咨询师能回看匹配依据，并在核对材料版本后选用。</p><dl class="result-points result-journey"><div><dt>检索结果</dt><dd>展示匹配理由</dd></div><div><dt>对客材料</dt><dd>仅可选用已审核版本</dd></div></dl></div></div><div class="controls"><a id="f-link" href="#case-exhibit">查看项目 ↗</a><span id="f-count" class="counter">01 / 04</span><div class="arrows"><button type="button" id="prev" aria-label="上一个项目">←</button><button type="button" id="next" aria-label="下一个项目">→</button></div></div></div></div><section id="experience"><div class="eyebrow">01 / EXPERIENCE</div><h2>工作与实习经历</h2>
+<details open id="work-lancy"><summary><span class="number">01</span><div><h3>朗姿医美（成都）产品研发.知识库项目组</h3><span class="muted">2026.06 – 2026.10 · 集团知识库与医美案例应用</span></div><span class="tag">工作</span></summary>
+<div class="content"><div class="project-brief"><div class="brief-head"><h4>集团知识库与医美案例推荐</h4><span>项目 / 01</span></div><p class="brief-pain"><b>痛点</b>多家医美机构并入集团后，病历、回访和 SAP 的数据口径不一致，咨询师查找并核对相似案例费时。</p><dl><div class="brief-row"><dt>梳理</dt><dd>从网咨和咨询师的查询场景出发，厘清病历案例资料、术后回访和 SAP 顾客编号各自的用途，与研发对齐取数和字段口径。</dd></div><div class="brief-row"><dt>设计</dt><dd>将顾客描述拆为年龄、诉求和效果顾虑，结合历史案例的适应症和查体记录检索，展示匹配理由和可核对的案例详情。</dd></div><div class="brief-row"><dt>落地</dt><dd>推进案例检索、人工核对和已审核材料发送流程的开发与试点。</dd></div></dl></div><div class="lancy-context" role="group" aria-labelledby="lancy-context-title">
+  <div class="lancy-context-brands">
+    <h4 id="lancy-context-title">朗姿旗下品牌与机构</h4>
+    <ul><li>长沙雅美</li><li>晶肤医美</li><li>米兰柏羽</li></ul>
+  </div>
+  <dl class="lancy-context-copy">
+    <div><dt>业务背景</dt><dd>多家机构并入集团后，病历、回访等资料仍分散在不同系统中。</dd></div>
+    <div><dt>我的职责</dt><dd>梳理咨询要查哪些资料、字段从哪个系统取，以及 AI 何时调用。</dd></div>
+  </dl>
+</div>
+<section class="case-part"><div class="case-heading"><span class="number">01</span><h4>集团知识库与数据对接</h4></div><div class="grid"><div class="box"><strong>病历系统</strong><p>梳理历史案例里需要用于检索和展示的信息，包括主要诉求、专科查体、治疗思路及术前术后对比。</p></div><div class="box"><strong>回访系统</strong><p>明确需要核对术后反馈时，应从回访系统获取对应记录，为咨询师理解历史案例提供补充信息。</p></div><div class="box"><strong>SAP</strong><p>梳理顾客编号在跨系统核对中的用途，与研发对齐哪些字段需要查询、各字段从哪里取。</p></div></div></section>
+<section class="case-part"><div class="case-heading"><span class="number">02</span><h4>医美案例检索与推荐</h4></div><ol class="case-flow"><li>描述顾客需求</li><li>提取检索条件</li><li>推荐并解释</li><li>人工核对与发送</li></ol><div class="case-example"><span class="eyebrow">CONSULTATION EXAMPLE</span><p>顾客说：「我 38 岁，法令纹明显，脸有点松，又担心填充后不自然。」系统提取年龄、诉求和效果顾虑，结合历史案例中的适应症和专科查体信息找相似案例，并说明各条命中的条件。咨询师核对治疗思路、对比图片和结果后，可选用已审核的对客版本发送到当前会话。</p></div></section>
+<section class="case-part"><div class="case-heading"><span class="number">03</span><h4>我的职责与交付</h4></div><p>负责定义案例列表、详情和发送各环节使用的字段及来源，与研发对齐接口，推进开发与试点。检索方案将字段筛选与相似案例召回分路，并按病例去重设计 Recall@K、MRR 验收口径。</p></section>
+<p class="labels">企业知识库 · 跨系统接口 · 案例检索原型 · 人工选用</p></div></details>
+<details id="work-tuya"><summary><span class="number">02</span><div><h3>智能涂鸦（杭州）.平台产品技术部｜AI 产品经理实习生</h3><span class="muted">2025.07 – 2026.01 · 智能家居 Agent 与设备自动问答</span></div><span class="tag">实习</span></summary>
+<div class="content"><div class="project-brief"><div class="brief-head"><h4>智能家居 Agent 与设备问答</h4><span>项目 / 02</span></div><p class="brief-pain"><b>痛点</b>用户说「晚上把灯关掉」时，设备和时间可能不明确；遇到配网或离线问题时，用户也需要知道下一步怎么排查。</p><dl><div class="brief-row"><dt>梳理</dt><dd>拆解定时关灯、条件触发和多设备联动，明确意图、设备、时间、条件和动作五类信息。</dd></div><div class="brief-row"><dt>设计</dt><dd>为指令设计缺参追问、执行前校验和失败反馈；为问答设计按设备及问题类型检索操作资料的流程。</dd></div><div class="brief-row"><dt>验证</dt><dd>用可运行 Demo 检查主要任务能否执行、参数是否正确，以及异常提示能否让用户知道接下来怎么做。</dd></div></dl></div><p class="case-intro">面向智能家居用户，参与两类对话能力的产品设计：一句话控制家里的设备，以及遇到使用或故障问题时获得有依据的回答。</p>
+<section class="case-part"><div class="case-heading"><span class="number">01</span><h4>智能家居 Agent</h4></div><ol class="case-flow"><li>理解用户意图</li><li>补齐设备与条件</li><li>校验并调用工具</li><li>反馈执行结果</li></ol><div class="grid"><div class="box"><strong>场景拆解</strong><p>把定时关灯、温度触发空调、多设备联动拆成意图、设备、时间、条件和动作，明确不同场景需要哪些信息。</p></div><div class="box"><strong>对话与执行规则</strong><p>例如用户说「晚上把灯关掉」，如果灯具或时间不明确，先追问缺失项。信息补齐后再校验参数，按任务规则决定是否需要用户确认。</p></div><div class="box"><strong>异常处理</strong><p>工具返回设备离线、执行失败等状态时，反馈实际结果和可恢复的下一步，让用户知道任务有没有执行成功。</p></div></div></section>
+<section class="case-part"><div class="case-heading"><span class="number">02</span><h4>设备使用与故障自动问答</h4></div><p>围绕配网、离线排查和功能使用，梳理设备说明、常见问题与故障资料。参与设计先确认设备和问题类型，再检索对应步骤并生成回答的流程。遇到「灯怎么连不上」这类描述，先澄清是配网失败还是已经联网后离线，再给出有依据的排查步骤；资料不足时说明缺少什么信息。</p></section>
+<section class="case-part"><div class="case-heading"><span class="number">03</span><h4>Demo 验证</h4></div><p>用可运行 Demo 分别检查设备和参数是否匹配、何时需要确认，以及离线恢复后是否能重试原指令并核对回执。问答场景检查回复能否定位到排障条目，后续追问是否沿用已经确认的设备信息。</p></section>
+<p class="labels">Agent 工作流 · Function Calling · RAG 设备知识问答 · Demo 验证</p></div></details>
+<details id="work-process"><summary><span class="number">03</span><div><h3>TimeDistributions - 企业流程性能分析（Adelaide University）</h3><span class="muted">2025 年 2 月至 6 月 · 算法工程师实习生 · Anna Kalenkova 博士指导</span></div><span class="tag">实习</span></summary>
+<div class="content"><div class="project-brief"><div class="brief-head"><h4>企业流程性能分析</h4><span>项目 / 03</span></div><p class="brief-pain"><b>痛点</b>平均耗时难以反映少数流程特别慢的情况，业务方需要看到完整耗时分布，才能进一步排查瓶颈。</p><dl><div class="brief-row"><dt>建模</dt><dd>基于 PM4Py 预处理事件日志，提取阶段间耗时，按小时构建离散分布。</dd></div><div class="brief-row"><dt>优化</dt><dd>围绕半马尔可夫模型计算总耗时分布，将反复执行的直接卷积替换为 FFT 卷积。</dd></div><div class="brief-row"><dt>结果</dt><dd>对比优化前后，平均计算耗时降低约 81%，分布结果基本一致。</dd></div></dl></div><div class="grid"><div class="box"><strong>分析目标</strong><p>从业务事件日志估计完整流程的总耗时分布，帮助业务方理解长尾耗时，并为瓶颈排查与情景分析提供依据。</p></div><div class="box"><strong>我的工作</strong><p>用 PM4Py 清洗日志、发现直接跟随图，按小时构建转移耗时分布。围绕半马尔可夫模型的状态约简和时间传播，改用 FFT 卷积计算总耗时分布。</p></div><div class="box"><strong>实验结果</strong><p class="big">约 81%</p><p>项目实验记录的平均计算耗时降幅，比较直接卷积和 FFT 卷积。下方展示另一次基于合成输入的可复算基准。</p></div></div><p class="labels">Python · PM4Py · NumPy · SciPy · Semi-Markov</p><p class="research-sources">Anna Kalenkova 博士曾任阿德莱德大学博士后研究员（2022–2023），后任讲师。</p><div class="hero-actions project-open-links"><a class="jump" href="#flow-evidence">看项目资料 ↓</a><a class="repo-link" href="https://github.com/akalenkova/TimeDistributions" target="_blank" rel="noopener">https://github.com/akalenkova/TimeDistributions ↗</a></div></div></details>
+</section>
+<section id="project"><div class="section-pair"><div><div class="eyebrow">02 / PROJECTS</div><h2>项目经历</h2></div><p>四个项目用界面截图或流程说明图展示，配有场景、设计取舍和我的工作说明。</p></div><ul class="project-index" aria-label="项目导航"><li><a href="#case-exhibit"><span>企业项目 · 试点</span><b>案例检索工作台</b></a></li><li><a href="#home-exhibit"><span>实习项目 · Demo</span><b>智能家居对话台</b></a></li><li><a href="#flow-exhibit"><span>算法工程师实习</span><b>流程性能分析</b></a></li><li><a href="#research-exhibit"><span>个人项目 · 原型</span><b>研报引用复核</b></a></li></ul><div class="project-showcase"><article class="show-panel" id="case-exhibit"><div class="show-visual shot-case"><div class="case-preview-switcher" role="group" aria-label="切换界面原型" hidden><button type="button" aria-pressed="true" data-src="./apps/previews/case.webp?v=case-caption" data-caption="案例检索原型 · 提取条件与匹配依据" data-alt="顾客描述、检索条件、候选案例及详情区的微调参考素材">案例检索</button><button type="button" aria-pressed="false" data-src="./apps/previews/case-compare.webp" data-caption="候选对比原型 · 核对诉求与审核状态" data-alt="两条候选案例的诉求、年龄段和材料状态对比">候选对比</button><button type="button" aria-pressed="false" data-src="./apps/previews/case-material.webp" data-caption="对客草稿原型 · 核对版本和适用场景" data-alt="可对客材料版本、沟通稿和发送前核对清单">对客草稿</button></div><figure class="show-shot"><img src="./apps/previews/case.webp?v=case-caption" width="1280" height="750" loading="lazy" alt="顾客描述、检索条件、候选案例及详情区的微调参考素材"><figcaption><span aria-live="polite">案例检索原型 · 提取条件与匹配依据</span><a class="show-zoom" href="./apps/previews/case.webp?v=case-caption" target="_blank" rel="noopener" aria-label="查看大图：医美案例检索（在新标签页打开）"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5H3.5V7m9.5-3.5h3.5V7M3.5 13v3.5H7m9.5-3.5v3.5H13"/></svg><span>查看大图</span></a></figcaption></figure></div>
+<div class="show-copy">
+  <div class="eyebrow">01 / 朗姿 <span class="project-label">企业项目 · 推进试点</span></div>
+  <h3>医美案例检索与推荐</h3>
+  <p class="case-lead">咨询师要从病历和回访资料里找相近案例，并核对材料版本。我负责对齐病历、回访和 SAP 的取数字段，设计从顾客描述提取条件、展示匹配依据和人工选用已审材料的流程。</p>
+  <div class="project-outcome" aria-label="项目成果"><div class="result-summary"><div class="result-scope"><span>交付进度 · 试点</span></div><p class="result-value result-text">推荐结果可核对</p><p class="result-caption">咨询师能回看匹配依据，并在核对材料版本后选用。</p><dl class="result-points result-journey"><div><dt>检索结果</dt><dd>展示匹配理由</dd></div><div><dt>对客材料</dt><dd>仅可选用已审核版本</dd></div></dl></div><p class="result-detail">试点验收会对照查找耗时、可用案例命中率和咨询后成交率，口径见下方。</p></div><div class="case-note"><b>一个具体取舍</b><p>相似度只能帮助咨询师挑候选。能否对客使用，取决于材料本身的审核状态和版本。例如，B-024 仍在审核中，只能内部查阅。</p></div><dl class="project-checks"><div><dt>缺查体或回访</dt><dd>保留候选，提示人工核对缺项。</dd></div><div><dt>材料待审</dt><dd>仍可内部查阅，草稿入口关闭。</dd></div></dl>
+  <details class="project-measures"><summary>试点验收指标</summary><dl><div><dt>案例查找与核对耗时</dt><dd>比较同类咨询从开始查找，到选定已审核案例的中位耗时。</dd></div><div><dt>Top 3 可用案例命中率</dt><dd>前三条推荐至少有一条已审核且匹配的查询数 ÷ 需推荐案例的查询数。</dd></div><div><dt>咨询后成交率</dt><dd>固定随访窗口内实际付款客户数 ÷ 有效咨询客户数，按客户去重。</dd></div></dl></details><div class="hero-actions project-open-links"><a class="jump" href="#work-lancy">看工作经历 →</a></div>
+</div></article><article class="show-panel" id="home-exhibit"><div class="show-visual shot-home"><figure class="show-shot"><img src="./apps/previews/home.webp?v=nav" width="1280" height="750" loading="lazy" alt="指令助手追问设备和时间，展示定时关灯的确认卡片"><figcaption><span>指令助手 · 确认定时任务</span><a class="show-zoom" href="./apps/previews/home.webp?v=nav" target="_blank" rel="noopener" aria-label="查看大图：智能家居指令助手（在新标签页打开）"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5H3.5V7m9.5-3.5h3.5V7M3.5 13v3.5H7m9.5-3.5v3.5H13"/></svg><span>查看大图</span></a></figcaption></figure></div>
+<div class="show-copy">
+  <div class="eyebrow">02 / 涂鸦智能 <span class="project-label">实习项目 · Demo 验证</span></div>
+  <h3>智能家居指令与问答</h3>
+  <p class="case-lead">我参与设计从口语指令到设备操作的流程，梳理助手如何处理缺参、设备离线和故障咨询。</p>
+  <div class="home-decisions">
+    <div class="home-decisions-heading"><h4>助手怎么处理</h4><span>交互设计</span></div>
+    <dl>
+      <div><dt>缺设备或时间</dt><dd>例如「晚上把灯关掉」，先追问哪盏灯、几点，再让用户确认定时任务。</dd></div>
+      <div><dt>设备离线</dt><dd>保留未执行的指令。恢复连接后可重试。收到设备的成功回执后，才显示执行完成。</dd></div>
+      <div><dt>故障咨询</dt><dd>区分配网失败和设备离线，给出对应的排查步骤和资料来源。</dd></div>
+    </dl>
+  </div>
+  <template class="result-summary"><div class="result-scope"><span>任务恢复</span><small>原型版本对照</small></div><p class="result-value result-text">离线后继续原任务</p><p class="result-caption">排查或刷新后，联网即可重试并查看回执。</p><dl class="result-points result-journey"><div><dt>旧版</dt><dd>重新输入指令</dd></div><div><dt>新版</dt><dd>直接重试原指令</dd></div></dl></template>
+  <details class="project-measures"><summary>Demo 验证指标</summary><dl><div><dt>指令成功率</dt><dd>正确执行且收到成功回执的任务数 ÷ 提交的可执行指令数。</dd></div><div><dt>离线恢复成功率</dt><dd>恢复连接后成功重试原指令的次数 ÷ 恢复后发起的重试次数。</dd></div><div><dt>故障自助解决率</dt><dd>根据答复完成排查且无需人工协助的任务数 ÷ 进入自助排查的任务数。</dd></div></dl></details><div class="hero-actions project-open-links"><a class="jump" href="#work-tuya">看工作经历 →</a></div>
+</div></article><article class="show-panel" id="flow-exhibit"><div class="show-visual shot-flow"><figure class="show-shot"><img src="./apps/previews/flow-explainer.webp?v=clean" width="1280" height="750" loading="lazy" alt="流程性能分析说明图：从事件日志还原流程，按小时构建耗时分布，再比较缩短受理等待前后的 P90 与超阈值比例。"><figcaption><span>流程性能分析 · 从事件日志到长尾评估</span><a class="show-zoom" href="./apps/previews/flow-explainer.webp?v=clean" target="_blank" rel="noopener" aria-label="查看大图：流程性能分析（在新标签页打开）"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5H3.5V7m9.5-3.5h3.5V7M3.5 13v3.5H7m9.5-3.5v3.5H13"/></svg><span>查看大图</span></a></figcaption></figure></div>
+<div class="show-copy">
+  <div class="eyebrow">03 / 导师项目 <span class="project-label">算法工程师实习 · 复算基准</span></div>
+  <h3>流程耗时与长尾分析</h3>
+  <p class="case-lead">我用 PM4Py 从事件日志提取各阶段间的耗时，按小时构建转移分布，并用半马尔可夫模型推算整体耗时。用 SciPy FFT 卷积替换 NumPy 直接卷积后，对照三种输入规模的运行耗时和输出误差。</p>
+  <div class="project-outcome" aria-label="项目成果"><div class="result-summary"><div class="result-scope"><span>项目成果</span><small>本机可复算基准</small></div><p class="result-value">−95.0%</p><p class="result-caption">8,192 桶输入的卷积中位耗时降幅</p><dl class="result-points"><div><dt>直接卷积</dt><dd>14.763 ms</dd></div><div><dt>FFT 卷积</dt><dd>0.735 ms</dd></div></dl></div><p class="result-detail">用两组各 8,192 桶的合成分布比较卷积方法，预热后各运行 9 次并取中位数。8,192 桶的中位耗时为 14.763 → 0.735 毫秒（约缩短 95%），4,096 桶为 2.234 → 0.295 毫秒（约缩短 87%）。</p></div><details class="benchmark-card">
+  <summary>
+    <span class="benchmark-summary">
+      <span class="benchmark-label">复算记录</span>
+      <span class="benchmark-preview"><span>8,192 桶输入</span><strong>14.763 → 0.735 ms</strong></span>
+    </span>
+  </summary>
+  <div class="benchmark-body"><table><thead><tr><th scope="col">每个分布的桶数</th><th scope="col">直接卷积</th><th scope="col">FFT 卷积</th></tr></thead><tbody><tr><th scope="row">1,024</th><td>0.098</td><td>0.097</td></tr><tr><th scope="row">4,096</th><td>2.234</td><td>0.295</td></tr><tr><th scope="row">8,192</th><td>14.763</td><td>0.735</td></tr></tbody></table><p>每组预热后重复 9 次，表内为中位数，单位毫秒。8,192 桶时，两种输出的最大绝对差约 <span class="benchmark-error">1.1 × 10<sup>−19</sup></span>。</p><p>在 1,024 桶时两种方法耗时接近，8,192 桶时差异更明显。表内是卷积运算耗时，可用下方脚本复算。</p><div class="benchmark-links"><a href="./flow-benchmark.py" download>复算脚本 ↓</a><a href="./flow-benchmark.json" download>实测记录 ↓</a></div></div></details><div class="flow-case-reference"><b>如何定位等待瓶颈</b><p>固定其他阶段的耗时分布，只改变受理阶段的等待时长，再比较 P90 和超阈值比例。P90 表示约九成样本在此时长内完成。</p></div>
+  <div class="hero-actions project-open-links"><a class="jump" href="#work-process">看研究经历 →</a><a class="jump" href="#flow-evidence">看项目资料 ↓</a><a class="resume-button" href="https://doi.org/10.1109/ACCESS.2025.3546033" target="_blank" rel="noopener">公开论文 ↗</a></div>
+</div><section class="flow-evidence" id="flow-evidence" aria-labelledby="flow-evidence-title">
+  <h4 id="flow-evidence-title">项目资料</h4>
+  <div class="flow-evidence-grid">
+    <figure class="flow-evidence-card">
+      <a class="flow-evidence-image" href="./apps/previews/flow-meeting.jpg" target="_blank" rel="noopener" aria-label="查看会议原图">
+        <img src="./apps/previews/flow-meeting.jpg" width="1126" height="666" loading="lazy" alt="江鹏宇与 Anna Kalenkova 博士及项目组成员的线上会议">
+      </a>
+      <figcaption><strong>与导师及项目组的线上会议</strong><a class="show-zoom" href="./apps/previews/flow-meeting.jpg" target="_blank" rel="noopener" aria-label="查看大图：项目组会议"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5H3.5V7m9.5-3.5h3.5V7M3.5 13v3.5H7m9.5-3.5v3.5H13"/></svg><span>查看大图</span></a></figcaption>
+    </figure>
+    <figure class="flow-evidence-card">
+      <a class="flow-evidence-image" href="./apps/previews/flow-code.webp" target="_blank" rel="noopener" aria-label="查看 GitHub 源码图">
+        <img src="./apps/previews/flow-code.webp" width="1600" height="946" loading="lazy" alt="GitHub 公开源码节选，semi_markov_discrete.py 第 115 至 126 行，两次调用 np.convolve 计算分布后按权重合并。">
+      </a>
+      <figcaption><strong>GitHub 源码节选 · 直接卷积基线</strong><span class="flow-evidence-actions"><a class="show-zoom" href="./apps/previews/flow-code.webp" target="_blank" rel="noopener" aria-label="查看大图：GitHub 源码"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5H3.5V7m9.5-3.5h3.5V7M3.5 13v3.5H7m9.5-3.5v3.5H13"/></svg><span>查看大图</span></a><a href="https://github.com/akalenkova/TimeDistributions/blob/0fc7cb8d4eefec791b34a363f29babdefb26c474/semi_markov_discrete.py#L115-L126" target="_blank" rel="noopener">查看对应行 ↗</a></span></figcaption>
+    </figure>
+  </div>
+</section></article><article class="show-panel" id="research-exhibit"><div class="show-visual shot-research"><figure class="show-shot"><img src="./apps/previews/research-en.webp?v=nav" width="1280" height="750" loading="lazy" alt="英文研报复核界面，展示 ASX FY2025 财务摘要、营收口径与引用核对清单"><figcaption><span lang="en">Research Desk · Annual Report Review</span><a class="show-zoom" href="./apps/previews/research-en.webp?v=nav" target="_blank" rel="noopener" aria-label="查看大图：研报复核工作台（在新标签页打开）"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5H3.5V7m9.5-3.5h3.5V7M3.5 13v3.5H7m9.5-3.5v3.5H13"/></svg><span>查看大图</span></a></figcaption></figure></div>
+<div class="show-copy">
+  <div class="eyebrow">04 / 个人项目 <span class="project-label">个人项目 · 研报复核</span></div>
+  <h3>一份年报，两种营收口径</h3>
+  <p class="case-lead">我用 ASX Limited 的 FY2025 年报做了一份研报核对原型。公开文件里同名的「营业收入」出现在分部报告和合并报表里，两个数字都能对上原文，但口径不同。</p>
+  <div class="project-outcome" aria-label="项目成果"><div class="result-summary"><div class="result-scope"><span>营收口径核对</span><small>ASX FY2025 年报</small></div><p class="result-value result-text">同名指标相差 9.8</p><p class="result-caption">单位为百万澳元。切换口径后需重新核对该条引用。</p><dl class="result-points"><div><dt>分部报告 · 附注 B1</dt><dd>1,107.2</dd></div><div><dt>合并综合收益表</dt><dd>1,117.0</dd></div></dl></div><p class="result-detail">营业收入的两个口径各自绑定原文。另一条引用是经营活动现金流入净额 302.9 百万澳元，绑定到合并现金流量表。</p><a class="result-source" href="https://www.asx.com.au/content/dam/asx/annual-reports/asx-2025-annual-report.pdf" target="_blank" rel="noopener">查看 ASX FY2025 年报 ↗</a></div><div class="research-note"><b>原型复核规则</b><p>切换营收口径时，只重置营收引用的确认状态，现金流的核对记录保留。两条引用都核对后，才可导出带来源的摘要。</p></div>
+  <details class="project-measures"><summary>原型评估指标</summary><dl><div><dt>摘要复核耗时</dt><dd>比较同类摘要从开始核对到可导出的中位耗时。</dd></div><div><dt>关键数据口径错误率</dt><dd>报表口径、单位或报告期错误的关键数据项 ÷ 核对的关键数据项。</dd></div><div><dt>首轮引用核对通过率</dt><dd>第一次检查即可通过的引用数 ÷ 首轮检查的引用总数。</dd></div></dl></details><div class="hero-actions project-open-links"><a class="jump" href="#finance-plan">看产品方案 →</a></div>
+</div></article></div><details id="finance-plan"><summary><span class="number">04</span><div><h3>ASX FY2025 研报复核助手</h3><span class="muted">个人产品原型 · 澳大利亚上市公司</span></div><span class="tag">个人项目</span></summary><div class="content"><div class="grid"><div class="box"><strong>证据定位</strong><p>按公司和报告期选定 ASX FY2025 年报，将营业收入和经营现金流绑定到财务表格、原文页码及对应报告口径。</p></div><div class="box"><strong>口径复核</strong><p>同时记录金额、币种、单位和报告期。分部营收切换为合并营收时，重置该条引用的核对状态，避免沿用旧结论。</p></div><div class="box"><strong>导出规则</strong><p>两条引用均核对后才开放导出。导出的摘要保留原文出处，复核时可回查金额及报表口径。</p></div></div></div></details></section><section id="approach"><div class="section-pair"><div><div class="eyebrow">03 / NOTES</div><h2>思考记录</h2></div><p>从几个实际工作环节出发，记录我对数据来源、人工确认和 Agent 执行边界的理解。</p></div><div class="note-controls"><output class="note-count" aria-live="polite">01 / 04</output><button class="resume-button note-next" type="button">翻下一张 ↗</button></div><div class="note-stack"><article class="note-card"><div class="eyebrow">企业知识库 · 数据口径</div><h3>先明确数据从哪里来，再让 AI 使用。</h3><p>跨系统业务里，同一概念可能有不同的字段和口径。我会先确认来源、使用权限和异常处理，再决定哪些资料适合检索，哪些状态需要回源查询。</p><small>→ 数据与业务规则</small></article><article class="note-card" hidden><div class="eyebrow">案例推荐 · 人工确认</div><h3>好的推荐，要让用户看懂为什么。</h3><p>在医美咨询场景里，我希望咨询师能一眼看出年龄段、诉求和顾虑哪些匹配，并能查看原案例。这样人工确认有明确依据，也方便发现系统理解偏了哪里。</p><small>→ 推荐理由与审核</small></article><article class="note-card" hidden><div class="eyebrow">智能体 · 执行边界</div><h3>先确认条件，再执行动作。</h3><p>自然语言里常缺设备、时间或触发条件。让智能体先补齐关键参数，并把设备的真实执行状态告诉用户，才能区分任务已经完成、仍待确认和执行失败。</p><small>→ 工具调用与异常反馈</small></article><article class="note-card" hidden><div class="eyebrow">AI 协作 · 业务记忆</div><h3>让 AI 接得上业务进度。</h3><p>把已经确认的背景、处理进度和可复用的团队经验保留下来，让 AI 在下一次任务中结合当前规则继续处理，并把关键判断留给业务人员确认。</p><small>→ 任务延续与团队复用</small></article></div></section><section id="contact"><div class="contact-layout"><div class="contact-hero"><div class="eyebrow">04 / GET IN TOUCH</div>
+<h2 class="contact-heading"><span>如果您正在招聘</span>
+<span>产品经理，</span>
+<span>欢迎联系我。</span></h2><p>欢迎交流企业知识库、智能体工作流和 AI 产品设计。</p><div class="hero-actions"><a class="jump" href="mailto:1176440540@qq.com">发邮件 ↗</a><a class="resume-button" href="./resume.pdf?v=pm-metrics" target="_blank" rel="noopener">查看 / 下载简历</a><a class="resume-button" href="#top">回到顶部 ↑</a></div></div><div class="contact-card"><div class="eyebrow">CONTACT DETAILS</div><dl><dt>邮箱</dt><dd><a href="mailto:1176440540@qq.com">1176440540@qq.com</a></dd><dt>手机</dt><dd><a href="tel:+8615308136113">15308136113</a></dd><dt>个人网站</dt><dd><a href="https://ashui520.github.io/ai-product-portfolio/">ashui520.github.io/ai-product-portfolio</a></dd><dt>适合聊的话题</dt><dd>企业知识库 · Agent 工作流 · 业务系统对接 · 流程分析</dd><dt>关于我</dt><dd>阿德莱德大学 · 计算机硕士 · 求职意向为产品经理</dd></dl></div></div></section></main><footer>江鹏宇 · AI 产品作品集</footer><script>
+const slides=[
+  [
+    "代表项目 / 朗姿",
+    "医美案例检索与推荐",
+    "咨询师用顾客的自然语言描述查找相似案例，核对匹配理由后选用已审核的对客材料。",
+    "case-exhibit"
+  ],
+  [
+    "实习项目 / 涂鸦智能",
+    "智能家居 Agent 与自动问答",
+    "覆盖设备指令、定时联动和设备使用咨询，梳理追问、执行校验与异常反馈。",
+    "home-exhibit"
+  ],
+  [
+    "实习项目 / 流程性能分析",
+    "用事件日志估计流程耗时",
+    "从企业事件日志估计完整流程的耗时分布，为识别长尾耗时和情景分析提供依据。",
+    "flow-exhibit"
+  ],
+  [
+    "个人项目 / 投研复核",
+    "ASX 研报复核助手",
+    "用同一份年报核对营业收入的两种口径，确认引用后导出带出处的摘要。",
+    "research-exhibit"
+  ]
+];
+const featureArt = document.querySelector(".feature-art");
+const featureResults = document.getElementById("f-results");
+const featureLink = document.getElementById("f-link");
+const featureCounter = document.getElementById("f-count");
+const featureFields = ["label", "title", "desc"].map(key => document.getElementById("f-" + key));
+let active = 0;
+function show(step) {
+  active = (active + step + slides.length) % slides.length;
+  const [label, title, description, projectId] = slides[active];
+  featureArt.dataset.active = String(active);
+  [label, title, description].forEach((value, i) => { featureFields[i].textContent = value; });
+  const summary = document.getElementById(projectId).querySelector(".result-summary");
+  const resultContent = summary instanceof HTMLTemplateElement ? summary.content : summary;
+  featureResults.replaceChildren(...Array.from(resultContent.children, child => child.cloneNode(true)));
+  featureLink.href = "#" + projectId;
+  featureCounter.textContent = String(active + 1).padStart(2, "0") + " / " + String(slides.length).padStart(2, "0");
+}
+document.querySelector("#prev").onclick=()=>show(-1);
+document.querySelector("#next").onclick=()=>show(1);
+document.querySelector(".feature").addEventListener("keydown",e=>{if(e.key==="ArrowLeft"||e.key==="ArrowRight"){e.preventDefault();show(e.key==="ArrowLeft"?-1:1)}});
+function openHash(){const target=document.getElementById(location.hash.slice(1));if(target?.tagName==="DETAILS")target.open=true}
+addEventListener("hashchange",openHash);openHash();
+const links=[...document.querySelectorAll("nav a, .page-toc a")];
+function progress(){const scroll=document.documentElement.scrollHeight-innerHeight;document.querySelector(".progress").style.transform="scaleX("+(scroll>0?scrollY/scroll:0)+")";const visible=links.filter(a=>document.querySelector(a.hash).getBoundingClientRect().top<160).at(-1);const current=scroll>0&&scrollY>=scroll-12?"#contact":visible?.hash;links.forEach(a=>a.hash===current?a.setAttribute("aria-current","location"):a.removeAttribute("aria-current"))}
+addEventListener("scroll",progress,{passive:true});addEventListener("resize",progress);progress();
+
+
+const field=document.querySelector(".particle-field");
+const hero=field.parentElement;
+const ctx=field.getContext("2d");
+if(ctx){
+ const reduced=matchMedia("(prefers-reduced-motion: reduce)");
+ let width=0,height=0,frame=0,visible=true,lastTime=0;
+ let mouse=null,points=[];
+ function resize(){
+  const r=hero.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);
+  width=r.width;height=r.height;
+  field.width=Math.round(width*dpr);field.height=Math.round(height*dpr);
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  const count=width<650?28:58;
+  points=Array.from({length:count},(_,i)=>({
+   x:((i*.61803399+.09)%1)*width,y:((i*.41421356+.17)%1)*height,
+   vx:Math.cos(i*2.13)*.22,vy:Math.sin(i*1.91)*.20,
+   r:1.25+(i%6)*.23,green:i%9===0
+  }));
+  paint(0);
+ }
+ function paint(dt){
+  ctx.clearRect(0,0,width,height);
+  const range=width<650?104:138;
+  for(const p of points){
+   p.x+=p.vx*dt;p.y+=p.vy*dt;
+   if(mouse&&dt){
+    const dx=mouse.x-p.x,dy=mouse.y-p.y,d=Math.hypot(dx,dy);
+    if(d>7&&d<165){const force=.38*(1-d/165)*dt;p.x+=dx/d*force;p.y+=dy/d*force}
+   }
+   if(p.x<-14)p.x=width+14;else if(p.x>width+14)p.x=-14;
+   if(p.y<-14)p.y=height+14;else if(p.y>height+14)p.y=-14;
+  }
+  ctx.lineWidth=1;
+  for(let i=0;i<points.length;i++)for(let j=i+1;j<points.length;j++){
+   const a=points[i],b=points[j],d=Math.hypot(a.x-b.x,a.y-b.y);
+   if(d>=range)continue;
+   ctx.strokeStyle="rgba(118,65,224,"+(.29*(1-d/range))+")";
+   ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();
+  }
+  for(const p of points){
+   const glow=ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r*3.4);
+   glow.addColorStop(0,p.green?"#a1c34157":"#9462ec58");glow.addColorStop(1,"transparent");
+   ctx.fillStyle=glow;ctx.beginPath();ctx.arc(p.x,p.y,p.r*3.4,0,Math.PI*2);ctx.fill();
+   ctx.fillStyle=p.green?"#83a822":"#a074ed";ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();
+  }
+ }
+ function tick(t){const dt=lastTime?Math.min((t-lastTime)/16.7,2):1;lastTime=t;paint(dt);frame=requestAnimationFrame(tick)}
+ function sync(){cancelAnimationFrame(frame);lastTime=0;if(visible&&!document.hidden&&!reduced.matches)frame=requestAnimationFrame(tick)}
+ hero.addEventListener("pointermove",e=>{if(e.pointerType!=="mouse")return;const r=hero.getBoundingClientRect();mouse={x:e.clientX-r.left,y:e.clientY-r.top}},{passive:true});
+ hero.addEventListener("pointerleave",()=>mouse=null);
+ new ResizeObserver(resize).observe(hero);
+ new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;sync()}).observe(hero);
+ document.addEventListener("visibilitychange",sync);
+ reduced.addEventListener("change",sync);resize();sync();
+}
+
+
+const noteCards=[...document.querySelectorAll(".note-card")],noteCount=document.querySelector(".note-count"),noteNext=document.querySelector(".note-next");
+const noteReduced=matchMedia("(prefers-reduced-motion: reduce)");
+let noteIndex=0,noteBusy=false;
+function renderNotes(leaving){
+ noteCards.forEach((card,i)=>{
+  if(card===leaving)return;
+  const offset=(i-noteIndex+noteCards.length)%noteCards.length;
+  card.hidden=offset>2;card.classList.toggle("is-active",offset===0);card.classList.toggle("is-next",offset===1);card.classList.toggle("is-back",offset===2);
+  card.setAttribute("aria-hidden",String(offset!==0));card.tabIndex=offset===0?0:-1;
+ });
+ noteCount.textContent=String(noteIndex+1).padStart(2,"0")+" / "+String(noteCards.length).padStart(2,"0");
+}
+function turnNote(){
+ if(noteBusy)return;
+ const leaving=noteCards[noteIndex],hadFocus=document.activeElement===leaving;
+ noteIndex=(noteIndex+1)%noteCards.length;
+ if(noteReduced.matches){renderNotes();if(hadFocus)noteCards[noteIndex].focus({preventScroll:true});return}
+ noteBusy=true;leaving.classList.add("is-leaving");leaving.setAttribute("aria-hidden","true");leaving.tabIndex=-1;
+ renderNotes(leaving);if(hadFocus)noteCards[noteIndex].focus({preventScroll:true});
+ setTimeout(()=>{leaving.classList.remove("is-leaving");renderNotes();noteBusy=false},520);
+}
+noteCards.forEach((card,i)=>{
+ card.setAttribute("role","button");card.setAttribute("aria-label","思考卡片 "+(i+1)+"，翻到下一张");
+ card.addEventListener("click",()=>{if(card===noteCards[noteIndex])turnNote()});
+ card.addEventListener("keydown",e=>{if(card===noteCards[noteIndex]&&(e.key==="Enter"||e.key===" ")){e.preventDefault();turnNote()}});
+});
+noteNext.addEventListener("click",turnNote);renderNotes();
+
+{
+  const switcher = document.querySelector('.case-preview-switcher');
+  const figure = switcher.nextElementSibling;
+  const preview = figure.querySelector('img');
+  const caption = figure.querySelector('figcaption > span');
+  const zoom = figure.querySelector('.show-zoom');
+  const views = switcher.querySelectorAll('button');
+  switcher.addEventListener('click', event => {
+    const view = event.target.closest('button');
+    if (!view || view.getAttribute('aria-pressed') === 'true') return;
+    for (const button of views) button.setAttribute('aria-pressed', String(button === view));
+    preview.src = view.dataset.src;
+    preview.alt = view.dataset.alt;
+    caption.textContent = view.dataset.caption;
+    zoom.href = view.dataset.src;
+    zoom.setAttribute('aria-label', '查看大图：' + view.textContent + '（在新标签页打开）');
+  });
+  switcher.hidden = false;
+}
+</script></body></html>
